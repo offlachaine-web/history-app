@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panoramic Global History & Labor Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-main">
+            <h1>Global Cultures & Parallel Labor Timeline</h1>
+            <p>A multi-lane panoramic interactive layout mapping synchronous technological developments and labor evolution patterns across human civilizations.</p>
+        </div>
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="canvasSearch" placeholder="Search cultures, achievements, dates...">
+            </div>
+            <button id="killAudio">⏹ Stop Audio Narration</button>
+            <div class="speed-container">
+                <label for="audioSpeed">Playback Speed:</label>
+                <input type="range" id="audioSpeed" min="0.5" max="1.8" step="0.1" value="1">
+                <span id="speedVal">1.0x</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="timeline-container" id="scrollViewport">
+        <div class="timeline-canvas" id="mainCanvas">
+            <div class="time-sync-line" id="laserLine"></div>
+            <div class="timeline-lane"><div class="lane-label" style="color: var(--color-egyptian)">Egyptian Culture</div><div class="lane-cards" id="lane-egyptian"></div></div>
+            <div class="timeline-lane"><div class="lane-label" style="color: var(--color-african)">African Culture</div><div class="lane-cards" id="lane-african"></div></div>
+            <div class="timeline-lane"><div class="lane-label" style="color: var(--color-arabian)">Arabian Culture</div><div class="lane-cards" id="lane-arabian"></div></div>
+            <div class="timeline-lane"><div class="lane-label" style="color: var(--color-asian)">Asian Culture</div><div class="lane-cards" id="lane-asian"></div></div>
+            <div class="timeline-lane"><div class="lane-label" style="color: var(--color-roman)">Roman / European</div><div class="lane-cards" id="lane-roman"></div></div>
+            <div class="timeline-lane"><div class="lane-label" style="color: var(--color-american)">American Culture</div><div class="lane-cards" id="lane-american"></div></div>
+            <div class="timeline-lane"><div class="lane-label" style="color: var(--color-slavery)">Slavery & Labor Track</div><div class="lane-cards" id="lane-slavery"></div></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
